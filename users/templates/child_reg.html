@@ -1,0 +1,21 @@
+<!-- child_registration.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Registration</title>
+</head>
+<body>
+    <h1>Child Registration</h1>
+
+    <p>Child has been registered successfully!</p>
+    <p>Parent: {{ child.parent.username }}</p>
+    <p>Child ID: {{ child.id }}</p>
+
+    <!-- Add additional information about the registered child as needed -->
+
+    <a href="{% url 'login' %}">Go back to home</a>
+</body>
+</html>
